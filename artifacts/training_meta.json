@@ -1,0 +1,57 @@
+{
+  "feature_columns": [
+    "application_month",
+    "application_dow",
+    "days_since_year_start",
+    "normative_numeric",
+    "eligible_amount_numeric",
+    "amount_per_normative",
+    "log_eligible_amount",
+    "region_code",
+    "farm_district_code",
+    "livestock_direction_code",
+    "subsidy_program_name_code",
+    "duplicate_application_flag",
+    "region_mean_amount",
+    "region_app_count",
+    "years_in_agribusiness",
+    "farm_size_ha",
+    "livestock_head_equivalent",
+    "prior_subsidy_count_3y",
+    "prior_subsidy_total_kzt_3y",
+    "subsidy_utilization_rate",
+    "vet_registry_match",
+    "seller_verified",
+    "buyer_verified",
+    "contract_completeness_score",
+    "doc_fraud_risk_score",
+    "tax_compliance_flag",
+    "land_area_per_head",
+    "merit_index_heuristic"
+  ],
+  "metrics": {
+    "n_train": 27669,
+    "n_test": 6918,
+    "roc_auc": 0.824204241730015,
+    "average_precision": 0.9795121775148642,
+    "accuracy": 0.7889563457646719,
+    "precision": 0.9631458966565349,
+    "recall": 0.8001893939393939,
+    "f1": 0.8741379310344828,
+    "positive_rate_train": 0.9158986591492284
+  },
+  "target_definition": {
+    "positive_statuses": [
+      "Исполнена",
+      "Одобрена",
+      "Получена",
+      "Сформировано поручение"
+    ],
+    "negative_statuses": [
+      "Отклонена"
+    ],
+    "excluded_statuses": [
+      "Отозвано"
+    ]
+  }
+}
